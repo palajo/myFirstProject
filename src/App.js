@@ -1,19 +1,22 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Nav, Form, InputGroup } from 'react-bootstrap';
 
 import './App.css';
 
 
 /* images */
 import logo from './img/logo.svg';
-import polygonwhite from './img/polygon-white.svg';
+import mainmenu from './img/main-menu.svg';
+import search from './img/search.svg';
+import profile from './img/profile.svg';
+import cart from './img/cart.svg';
+
 
 function App() {
   return (
       <div className="App">
         <header className="AppHeader">
-
 			<Container fluid className="">
 				<Row className="justify-content-between TopNavigation">
 					<Col>
@@ -46,15 +49,10 @@ function App() {
 				<Row className="justify-content-between MainNavigation">
 					<Col>
 						<Row className="justify-content-start">
-							<div className="MainNavigation-Menu align-self-center">
-								<svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50">
-									<path d="M 15.56619262695313 1 L 1.166191101074219 25 L 15.56619262695313 49 L 44.43381118774414 49 L 58.83381271362305 25 L 44.43381118774414 1 L 15.56619262695313 1 M 15.00000381469727 0 L 45 0 L 60 25 L 45 50 L 15.00000381469727 50 L 3.814697265625e-06 25 L 15.00000381469727 0 Z" stroke="none" fill="#962932"/>
-									<g>
-										<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">icon</text>
-									</g>
-								</svg>
+							<div className="MainNavigation-Menu align-self-center margin-right-20">
+                                <img src={mainmenu} />
 							</div>
-							<div className="MainNavigation-Logo ml-4">
+							<div className="MainNavigation-Logo">
 								<img src={logo} alt="logo" height="50" />
 							</div>
 						</Row>
@@ -62,30 +60,46 @@ function App() {
 
 					<Col>
 						<Row className="justify-content-end">
-							<div className="MainNavigation-Search align-self-center pr-2">Search</div>
-							<div className="MainNavigation-Profile pl-2 pr-2">
-								<svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50">
-									<path d="M 15.56619262695313 1 L 1.166191101074219 25 L 15.56619262695313 49 L 44.43381118774414 49 L 58.83381271362305 25 L 44.43381118774414 1 L 15.56619262695313 1 M 15.00000381469727 0 L 45 0 L 60 25 L 45 50 L 15.00000381469727 50 L 3.814697265625e-06 25 L 15.00000381469727 0 Z" stroke="none" fill="#962932"/>
-									<g>
-										<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">icon</text>
-									</g>
-								</svg>
+							<div className="MainNavigation-Search align-self-center margin-right-30">
+                                <Form.Row>
+                                    <Form.Group as={Col}>
+                                        <InputGroup>
+                                            <Form.Control className="search-input align-self-center"
+                                            type="text"
+                                            placeholder="Search here.."
+                                            />
+                                            <InputGroup.Prepend className="search-input-button">
+                                                <img src={search} />
+                                            </InputGroup.Prepend>
+                                        </InputGroup>
+                                    </Form.Group>
+                                </Form.Row>
+                            </div>
+							<div className="MainNavigation-Profile d-flex margin-left-20 margin-right-20">
+                                <div className="span margin-right-10">
+                                    <img src={profile} />
+                                </div>
+                                <div className="span align-self-center">
+                                    <p className="bold-16px">Личный</p>
+                                    <p>кабинет</p>
+                                </div>
 							</div>
-							<div className="MainNavigation-Cart pl-2 pr-2">
-								<svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 60 50">
-									<path d="M 15.56619262695313 1 L 1.166191101074219 25 L 15.56619262695313 49 L 44.43381118774414 49 L 58.83381271362305 25 L 44.43381118774414 1 L 15.56619262695313 1 M 15.00000381469727 0 L 45 0 L 60 25 L 45 50 L 15.00000381469727 50 L 3.814697265625e-06 25 L 15.00000381469727 0 Z" stroke="none" fill="#962932"/>
-									<g>
-										<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">icon</text>
-									</g>
-								</svg>
+							<div className="MainNavigation-Cart d-flex margin-left-20 margin-right-20">
+                                <div className="span margin-right-10">
+                                    <img src={cart} />
+                                </div>
+                                <div className="span align-self-center">
+                                        <p className="bold-16px">Корзина</p>
+                                        <p>покупок</p>
+                                </div>
 							</div>
-							<div className="MainNavigation-LanguageSwitcher align-self-center pl-2">Lang</div>
+							<div className="MainNavigation-LanguageSwitcher align-self-center margin-left-20">
+                                <p className="bold-16px color-red">RU</p>
+                            </div>
 						</Row>
 					</Col>
 				</Row>
-
 			</Container>
-
         </header>
       </div>
   );
