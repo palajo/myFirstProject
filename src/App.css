@@ -1,4 +1,131 @@
-.App {
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    line-height: 16px;
+    color: #1A1414;
+}
+
+
+/* TopNavigation styles */
+.TopNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #DEDEDE;
+    padding: 10px 20px;
+}
+.TopNavigation-ContactPhone{
+    margin-right: 50px;
+}
+.TopNavigation-LeftBlock{
+    display: flex;
+    flex-direction: row;
+}
+.TopNavigation-RightBlock{
+    display: flex;
+    flex-direction: row;
+}
+.TopNavigation-Menu ul{
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.TopNavigation-Menu ul > li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.TopNavigation-Menu ul > li:first-child{
+    padding-left: 0px;
+}
+.TopNavigation-Menu ul > li:last-child{
+    padding-right: 0px;
+}
+/* ------------------------------------- */
+
+
+/* MainNavigation styles */
+.MainNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #DEDEDE;
+    padding: 15px 20px;
+}
+.MainNavigation-LeftBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.MainNavigation-RightBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.MainNavigation-Logo{
+    margin-left: 20px;
+}
+.MainNavigation-RightBlock > div {
+    padding: 0px 20px;
+}
+.MainNavigation-RightBlock > div:first-child {
+    padding-left: 0px;
+}
+.MainNavigation-RightBlock > div:last-child {
+    padding-right: 0px;
+}
+/* ------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +163,4 @@
     transform: rotate(360deg);
   }
 }
+*/
