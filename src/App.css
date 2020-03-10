@@ -7,11 +7,24 @@ body{
 	line-height: 16px;
 
 	color: #1A1414;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* font styles*/
+h1{
+	margin: 0px;
+}
+h2{
+	margin: 0px;
+}
+h3{
+	margin: 0px;
+}
 p{
 	margin: 0px;
+	color: #333;
 }
 .bold-16px{
     font-size: 16px;
@@ -27,6 +40,9 @@ p{
 /* bootstrap corrections */
 .form-group{
     margin: 0px;
+}
+.container{
+	max-width: 1366px;
 }
 /* ------------------------ */
 
@@ -65,11 +81,15 @@ p{
 
 /* TopNavigation styles */
 .TopNavigation{
-	padding: 10px 40px;
+	padding: 10px 0px;
 }
 .nav a.nav-link{
 	color: black;
 	padding: 0px 10px;
+}
+.nav a.nav-link:hover{
+	color: #962932;
+	transition: all 0.1s ease;
 }
 .nav a.nav-link:first-child{
 	padding-left: 0px;
@@ -81,9 +101,11 @@ p{
 
 /* MainNavigation styles */
 .MainNavigation{
-	padding: 15px 40px;
-	border-top: 1px solid #DEDEDE;
-	border-bottom: 1px solid #DEDEDE;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	padding: 15px 0px;
+
+	margin-bottom: 20px;
 }
 .form-control{
 	height: 35px;
@@ -103,4 +125,131 @@ p{
 
 	z-index: 4;
 }
+
+/* ------------------------ */
+
+/* Button styles */
+button.button{
+	display: inline-block;
+
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	line-height: 50px;
+	width: 240px;
+	margin-left: 15px;
+
+	color: white;
+
+	background: none;
+	outline: none;
+	border: none;
+
+	position: relative;
+	z-index: 1;
+}
+button.button::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: linear-gradient(to right, #B12E39 50%, #962932 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+
+	transition:all 0.3s ease;
+    transform: skew(-150deg);
+    z-index: -1;
+}
+button.button:hover::before{
+	background-position: left bottom;
+}
+/* ------------------------ */
+
+/* Slider styles */
+.Slider{
+	border-bottom: 1px solid #962932;
+}
+.SliderHeading{
+	font-size: 36px;
+	line-height: 48px;
+
+	text-transform: uppercase;
+}
+.Slider hr{
+	background: #707070;
+	width: 100%;
+	margin: 10px 0px;
+}
+p.SliderText{
+	font-size: 16px;
+	line-height: 24px;
+
+	margin-bottom: 20px;
+}
+/* ------------------------ */
+
+/* Brand styles */
+.Brands{
+	padding: 50px 50px;
+}
+.BrandBackground{
+	display: inline-block;
+
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+
+	color: #333;
+	margin: 5px 10px;
+
+	line-height: 45px;
+
+	background: none;
+	outline: none;
+	border: none;
+
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+.BrandBackground::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+	border: 1px solid #962932;
+
+    background: linear-gradient(to right, #B12E39 50%, #fff 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+
+	transition: all 0.4s ease;
+    transform: skew(150deg);
+    z-index: -1;
+}
+#reverse .BrandBackground::before {
+	transform: skew(-150deg);
+}
+.BrandBackground:hover img{
+	filter: invert(1);
+	transition: 0.4s ease;
+}
+.BrandBackground:hover{
+	color: white;
+	transition: 0.4s ease;
+}
+.BrandBackground:hover::before{
+	background-position: left bottom;
+}
+
 /* ------------------------ */
