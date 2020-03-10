@@ -37,6 +37,12 @@ p{
 .margin-right-10{
     margin-right: 10px;
 }
+.margin-left-15{
+    margin-left: 15px;
+}
+.margin-right-15{
+    margin-right: 15px;
+}
 .margin-left-20{
     margin-left: 20px;
 }
@@ -48,6 +54,12 @@ p{
 }
 .margin-right-30{
     margin-right: 30px;
+}
+.margin-left-40{
+    margin-left: 40px;
+}
+.margin-right-40{
+    margin-right: 40px;
 }
 /* ------------------------ */
 
@@ -64,9 +76,6 @@ p{
 }
 .nav a.nav-link:last-child{
 	padding-right: 0px;
-}
-.TopNavigation-ContactPhone{
-	margin-right: 50px;
 }
 /* ------------------------ */
 
