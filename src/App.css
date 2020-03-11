@@ -104,6 +104,12 @@ p{
 .margin-top-40{
     margin-top: 40px;
 }
+.margin-bottom-50{
+    margin-bottom: 50px;
+}
+.margin-top-50{
+    margin-top: 50px;
+}
 /* ------------------------ */
 
 /* TopNavigation styles */
@@ -282,16 +288,33 @@ p.SliderText{
 /* ------------------------ */
 
 /* IconGraphic styles */
-.IconGraphic{
-	margin-bottom: 50px;
-}
 .IconGraphic img{
 	margin-bottom: 15px;
 }
-.IconDescription{
+.IconGraphic{
 	font-size: 16px;
 	line-height: 22px;
 
 	color: #333;
 }
 /* ------------------------ */
+
+/* NewsBlock styles */
+.NewsBlock img{
+	margin-bottom: 15px;
+}
+.NewsBlock p{
+	font-size: 20px;
+	line-height: 24px;
+
+	font-weight: 600;
+}
+.NewsBlock .col{
+	padding: 0px 30px;
+}
+.NewsBlock .col:first-child{
+	padding-left: 0px;
+}
+.NewsBlock .col:last-child{
+	padding-right: 0px;
+}

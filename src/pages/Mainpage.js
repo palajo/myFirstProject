@@ -4,41 +4,66 @@ import { Container, Row, Col, Navbar, Nav, Form, InputGroup } from 'react-bootst
 
 import Slider from '../components/Slider.js';
 import Brands from '../components/Brands.js';
+import IconGraphic from '../components/IconGraphic.js';
+import News from '../components/News.js';
 
-import icondiscount from '../img/icon-discount.svg';
+import IconContacts from '../img/icon-contacts.svg';
 
 function Mainpage() {
 	return(
 		<body className="AppBody">
 			<Slider />
 			<Brands />
-			<Container className="IconGraphic">
+			<IconGraphic />
+			<News />
+			<Container className="margin-bottom-50">
 				<Row className="margin-bottom-30 justify-content-center">
-					<h2>Why we?!</h2>
+					<h2>Contacts</h2>
 				</Row>
-				<Row className="text-center IconDescription">
+				<Row className="ContactsBlock">
 					<Col>
-						<img src={icondiscount} width="100px" />
+						<Row>
+							<p className="ContactPhone">+38 (000) 000 00 00</p>
+						</Row>
+						<Row>
+							<Col>
+								<Row>
+									<div className="span">
+										<img src={IconContacts} />
+									</div>
+									<div className="span margin-left-15">
+										some text <br />
+										over here.
+									</div>
+								</Row>
+								<Row>
+									<div className="span">
+										icon
+									</div>
+									<div className="span">
+										some text <br />
+										over here.
+									</div>
+								</Row>
+								<Row>
+									<div className="span">
+										icon
+									</div>
+									<div className="span">
+										some text <br />
+										over here.
+									</div>
+								</Row>
+							</Col>
+							<Col>
+							</Col>
+						</Row>
 					</Col>
 					<Col>
-						<img src={icondiscount} width="100px" />
-					</Col>
-					<Col>
-						<img src={icondiscount} width="100px" />
-						<p>
-							Any delivery <br />
-							"just in time!"
-						</p>
-					</Col>
-					<Col>
-						<img src={icondiscount} width="100px" />
-					</Col>
-					<Col>
-						<img src={icondiscount} width="100px" />
+						map
 					</Col>
 				</Row>
 			</Container>
-
 		</body>
 	);
 }
