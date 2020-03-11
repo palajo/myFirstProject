@@ -1,14 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
-import './App.css';
 
 /* images */
-import logo from './img/logo.svg';
-import mainmenu from './img/main-menu.svg';
-import search from './img/search.svg';
-import profile from './img/profile.svg';
-import cart from './img/cart.svg';
+import logo from '../img/logo.svg';
+import mainmenu from '../img/main-menu.svg';
+import search from '../img/search.svg';
+import profile from '../img/profile.svg';
+import cart from '../img/cart.svg';
 
 function Header() {
 	return(
