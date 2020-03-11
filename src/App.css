@@ -80,6 +80,12 @@ p{
 .margin-right-40{
     margin-right: 40px;
 }
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
 .margin-bottom-15{
     margin-bottom: 15px;
 }
@@ -317,4 +323,50 @@ p.SliderText{
 }
 .NewsBlock .col:last-child{
 	padding-right: 0px;
+}
+
+
+/* ContactsBlock styles */
+.gray-12px{
+	font-size: 12px;
+	line-height: 14px;
+
+	color: #707070;
+}
+.ContactInfo > .col > .row{
+	padding: 5px 0px;
+
+}
+.ContactPhone{
+	font-size: 30px;
+	line-height: 36px;
+}
+
+/* DescriptionBlock styles */
+.DescriptionBlock h2{
+	font-size: 24px;
+	font-weight: 700;
+
+	line-height: 30px;
+}
+.DescriptionBlock p{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+/* Footer styles */
+footer{
+	background: #962932;
+	padding: 10px 0px;
+}
+footer .nav a.nav-link{
+	color: white;
+	padding: 0px 10px;
+}
+footer .nav a.nav-link:hover{
+	color: #cdcbcb;
+	transition: all 0.1s ease;
+}
+footer p{
+	color: white;
 }
