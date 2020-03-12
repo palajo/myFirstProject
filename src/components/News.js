@@ -4,6 +4,19 @@ import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
 
 import newsimage from '../img/news.jpg';
 
+function NewsBlock (props){
+	return(
+		<Col>
+			<Row>
+				<img src={props.NewsImage} width="100%" />
+			</Row>
+			<Row>
+				<p className="NewsHeading">{props.NewsDescription}</p>
+			</Row>
+		</Col>
+	);
+}
+
 function News() {
 	return(
 		<Container className="margin-bottom-50">
@@ -11,38 +24,10 @@ function News() {
 				<h2>Latest news</h2>
 			</Row>
 			<Row className="NewsBlock">
-				<Col>
-					<Row>
-						<img src={newsimage} width="100%" />
-					</Row>
-					<Row>
-						<p className="NewsHeading">Happy New Year!</p>
-					</Row>
-				</Col>
-				<Col>
-					<Row>
-						<img src={newsimage} width="100%" />
-					</Row>
-					<Row>
-						<p className="NewsHeading">Happy New Year!</p>
-					</Row>
-				</Col>
-				<Col>
-					<Row>
-						<img src={newsimage} width="100%" />
-					</Row>
-					<Row>
-						<p className="NewsHeading">Happy New Year!</p>
-					</Row>
-				</Col>
-				<Col>
-					<Row>
-						<img src={newsimage} width="100%" />
-					</Row>
-					<Row>
-						<p className="NewsHeading">Happy New Year!</p>
-					</Row>
-				</Col>
+				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
+				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
+				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
+				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
 			</Row>
 		</Container>
     );

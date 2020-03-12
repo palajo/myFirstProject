@@ -5,6 +5,20 @@ import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
 import IconContacts from '../img/icon-contacts.svg';
 import Map from '../img/google-map.png';
 
+function Contact(props) {
+  return (
+	  <Row>
+		  <div className="span">
+			  <img src={props.IconContact} />
+		  </div>
+		  <div className="span margin-left-15 align-self-center">
+			  <p className="gray-12px">{props.ContactHeading}</p>
+			  <p>{props.ContactInfo}</p>
+		  </div>
+	  </Row>
+  );
+}
+
 function Contacts() {
 	return(
 		<Container className="margin-bottom-50">
@@ -18,62 +32,15 @@ function Contacts() {
 					</Row>
 					<Row className="ContactInfo">
 						<Col>
-							<Row>
-								<div className="span">
-									<img src={IconContacts} />
-								</div>
-								<div className="span margin-left-15 align-self-center">
-									<p className="gray-12px">Ask a question:</p>
-									<p>info@s-car.com.ua</p>
-								</div>
-							</Row>
-							<Row>
-								<div className="span">
-									<img src={IconContacts} />
-								</div>
-								<div className="span margin-left-15 align-self-center">
-									<p className="gray-12px">Ask a question:</p>
-									<p>info@s-car.com.ua</p>
-								</div>
-							</Row>
-							<Row>
-								<div className="span">
-									<img src={IconContacts} />
-								</div>
-								<div className="span margin-left-15 align-self-center">
-									<p className="gray-12px">Ask a question:</p>
-									<p>info@s-car.com.ua</p>
-								</div>
-							</Row>
+							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+
 						</Col>
 						<Col>
-							<Row>
-								<div className="span">
-									<img src={IconContacts} />
-								</div>
-								<div className="span margin-left-15 align-self-center">
-									<p className="gray-12px">Ask a question:</p>
-									<p>info@s-car.com.ua</p>
-								</div>
-							</Row>
-							<Row>
-								<div className="span">
-									<img src={IconContacts} />
-								</div>
-								<div className="span margin-left-15 align-self-center">
-									<p className="gray-12px">Ask a question:</p>
-									<p>info@s-car.com.ua</p>
-								</div>
-							</Row>
-							<Row>
-								<div className="span">
-									<img src={IconContacts} />
-								</div>
-								<div className="span margin-left-15 align-self-center">
-									<p className="gray-12px">Ask a question:</p>
-									<p>info@s-car.com.ua</p>
-								</div>
-							</Row>
+							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
 						</Col>
 					</Row>
 				</Col>
