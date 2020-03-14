@@ -19,7 +19,7 @@ function NewsBlock (props){
 
 function News() {
 	return(
-		<Container className="margin-bottom-50">
+		<Container>
 			<Row className="margin-bottom-30 justify-content-center">
 				<h2>Latest news</h2>
 			</Row>

@@ -7,7 +7,7 @@ import Map from '../img/google-map.png';
 
 function Description() {
 	return(
-		<Container className="DescriptionBlock margin-bottom-50">
+		<Container className="DescriptionBlock">
 			<Row className="margin-bottom-10">
 				<h2>Contacts</h2>
 			</Row>

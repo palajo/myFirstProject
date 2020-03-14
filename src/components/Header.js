@@ -9,9 +9,14 @@ import search from '../img/search.svg';
 import profile from '../img/profile.svg';
 import cart from '../img/cart.svg';
 
+function openNav() {
+    document.getElementById("sidenav").style.left = "0px";
+    document.getElementById("overlay").style.display = "block";
+}
+
 function Header() {
 	return(
-		<header className="AppHeader">
+		<header>
 			<Container fluid className="TopNavigation">
 				<Container>
 					<Row className="justify-content-between">
@@ -49,7 +54,7 @@ function Header() {
 						<Col xl={3}>
 							<Row className="justify-content-start">
 								<div className="MainNavigation-Menu align-self-center margin-right-20">
-									<img src={mainmenu} />
+									<img src={mainmenu} onClick={openNav} className="menuToggle" />
 								</div>
 								<div className="MainNavigation-Logo">
 									<img src={logo} alt="logo" height="50" />

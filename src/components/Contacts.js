@@ -21,7 +21,7 @@ function Contact(props) {
 
 function Contacts() {
 	return(
-		<Container className="margin-bottom-50">
+		<Container>
 			<Row className="margin-bottom-30 justify-content-center">
 				<h2>Contacts</h2>
 			</Row>

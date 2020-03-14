@@ -4,7 +4,7 @@ import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
 
 function Footer() {
 	return(
-		<footer className="AppFooter">
+		<footer>
 			<Container>
 				<Row className="justify-content-between">
 					<Col>

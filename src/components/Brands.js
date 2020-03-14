@@ -18,7 +18,7 @@ function Brand(props) {
 
 function Brands() {
 	return(
-        <Container className="Brands">
+        <Container>
             <Row>
 				<Brand BrandLogo={brand} BrandTitle="Volkswagen" />
 				<Brand BrandLogo={brand} BrandTitle="Volkswagen" />

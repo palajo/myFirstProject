@@ -23,7 +23,7 @@ function Icon(props){
 
 function IconGraphic() {
 	return(
-		<Container className="margin-bottom-50">
+		<Container>
 			<Row className="margin-bottom-30 justify-content-center">
 				<h2>Why we?!</h2>
 			</Row>
