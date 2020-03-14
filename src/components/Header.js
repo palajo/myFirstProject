@@ -1,6 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
+import {
+    Container,
+    Row,
+    Col,
+    Nav,
+    Form,
+    InputGroup
+} from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 /* images */
 import logo from '../img/logo.svg';

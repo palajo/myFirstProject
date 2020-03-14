@@ -1,15 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
+import {
+    Container,
+    Row,
+    Col,
+    Nav,
+} from 'react-bootstrap';
 
-import IconContacts from '../img/icon-contacts.svg';
 import Map from '../img/google-map.png';
 
 function Description() {
 	return(
 		<Container className="DescriptionBlock">
 			<Row className="margin-bottom-10">
-				<h2>Contacts</h2>
+				<h2>Spare parts for cars from S-Car</h2>
 			</Row>
 			<Row>
 				<p>

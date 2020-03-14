@@ -1,7 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
-
+import {
+    Container,
+    Row,
+    Col,
+    Nav,
+} from 'react-bootstrap';
 function Footer() {
 	return(
 		<footer>

@@ -1,7 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
-
+import {
+    Container,
+    Row,
+    Col,
+} from 'react-bootstrap';
 import icondiscount from '../img/icon-discount.svg';
 import iconcalendar from '../img/icon-calendar.svg';
 

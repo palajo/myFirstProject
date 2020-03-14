@@ -1,21 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
-
+import {
+    Container,
+    Row,
+    Col,
+    Nav,
+} from 'react-bootstrap';
 import logowhite from '../img/logo-white.svg';
 import mainmenuwhite from '../img/main-menu-white.svg';
 
 function closeNav() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("sidenav").style.left = "-340px";
-}
-
-function SidebarElement (props){
-	return(
-        <li className="nav-item">
-            <a className="nav-link" href={props.Link}>{props.Text}</a>
-        </li>
-	);
 }
 
 function Sidebar() {
@@ -32,18 +28,18 @@ function Sidebar() {
                 </Row>
                 <Row>
                     <Col>
-                        <ul className="nav flex-column SidebarMenu">
-                            <SidebarElement Link="#" Text="Menu 1" />
-                            <SidebarElement Link="#" Text="Menu 2" />
-                            <SidebarElement Link="#" Text="Menu 3" />
-                            <SidebarElement Link="#" Text="Menu 4" />
-                            <SidebarElement Link="#" Text="Menu 5" />
-                            <SidebarElement Link="#" Text="Menu 6" />
-                            <SidebarElement Link="#" Text="Menu 7" />
-                            <SidebarElement Link="#" Text="Menu 8" />
-                            <SidebarElement Link="#" Text="Menu 9" />
-                            <SidebarElement Link="#" Text="Menu 10" />
-                        </ul>
+                        <Nav className="flex-column SidebarMenu">
+                            <Nav.Link href="#">Catalog</Nav.Link>
+                            <Nav.Link href="#">My profile</Nav.Link>
+                            <Nav.Link href="#">Cart</Nav.Link>
+                            <Nav.Link href="#">About us</Nav.Link>
+                            <Nav.Link href="#">Our office</Nav.Link>
+                            <Nav.Link href="#">Delivery</Nav.Link>
+                            <Nav.Link href="#">Payment</Nav.Link>
+                            <Nav.Link href="#">For clients</Nav.Link>
+                            <Nav.Link href="#">For business</Nav.Link>
+                            <Nav.Link href="#">Contacts</Nav.Link>
+                        </Nav>
                     </Col>
                 </Row>
             </Container>

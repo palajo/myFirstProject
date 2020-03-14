@@ -1,6 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
+import {
+    Container,
+    Row,
+    Col,
+} from 'react-bootstrap';
 
 import sliderimage from '../img/slider-image.png';
 import brand from '../img/brand.svg';

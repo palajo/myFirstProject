@@ -1,7 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
-
+import {
+    Container,
+    Row,
+    Col,
+} from 'react-bootstrap';
 import newsimage from '../img/news.jpg';
 
 function NewsBlock (props){
@@ -24,10 +27,10 @@ function News() {
 				<h2>Latest news</h2>
 			</Row>
 			<Row className="NewsBlock">
-				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
-				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
-				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
-				<NewsBlock NewsImage={newsimage} NewsDescription="Happy new year!" />
+				<NewsBlock NewsImage={newsimage} NewsDescription="Some news over here." />
+				<NewsBlock NewsImage={newsimage} NewsDescription="Some news over here." />
+				<NewsBlock NewsImage={newsimage} NewsDescription="Some news over here." />
+				<NewsBlock NewsImage={newsimage} NewsDescription="Some news over here." />
 			</Row>
 		</Container>
     );

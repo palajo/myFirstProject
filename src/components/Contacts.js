@@ -1,15 +1,22 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Nav, Form, InputGroup } from 'react-bootstrap';
+import {
+    Container,
+    Row,
+    Col,
+} from 'react-bootstrap';
 
-import IconContacts from '../img/icon-contacts.svg';
+import IconClock from '../img/icon-clock.svg';
+import IconLocation from '../img/icon-location.svg';
+import IconMessage from '../img/icon-message.svg';
+
 import Map from '../img/google-map.png';
 
 function Contact(props) {
   return (
 	  <Row>
 		  <div className="span">
-			  <img src={props.IconContact} />
+			  <img width="64px" src={props.IconContact} />
 		  </div>
 		  <div className="span margin-left-15 align-self-center">
 			  <p className="gray-12px">{props.ContactHeading}</p>
@@ -32,15 +39,15 @@ function Contacts() {
 					</Row>
 					<Row className="ContactInfo">
 						<Col>
-							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
-							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
-							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+							<Contact IconContact={IconMessage} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+							<Contact IconContact={IconMessage} ContactHeading="For partners:" ContactInfo="partners@s-car.com" />
+							<Contact IconContact={IconLocation} ContactHeading="Address:" ContactInfo="28 Park Road London WC36 7MB" />
 
 						</Col>
 						<Col>
-							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
-							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
-							<Contact IconContact={IconContacts} ContactHeading="Ask a question:" ContactInfo="info@s-car.com" />
+							<Contact IconContact={IconClock} ContactHeading="Warehouse:" ContactInfo="Mn. - Fr.: 9:00 - 18:00" />
+							<Contact IconContact={IconClock} ContactHeading="Working hours:" ContactInfo="Mn. - Fr.: 9:00 - 18:00" />
+							<Contact IconContact={IconMessage} ContactHeading="Skype:" ContactInfo="@scarmanager" />
 						</Col>
 					</Row>
 				</Col>

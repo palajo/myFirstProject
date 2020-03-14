@@ -173,18 +173,18 @@ p{
 .TopNavigation{
 	padding: 10px 0px;
 }
-.nav a.nav-link{
+.TopNavigation .nav a.nav-link{
 	color: black;
 	padding: 0px 10px;
 }
-.nav a.nav-link:hover{
+.TopNavigation .nav a.nav-link:hover{
 	color: #B11622;
 	transition: all 0.1s ease;
 }
-.nav a.nav-link:first-child{
+.TopNavigation .nav a.nav-link:first-child{
 	padding-left: 0px;
 }
-.nav a.nav-link:last-child{
+.TopNavigation .nav a.nav-link:last-child{
 	padding-right: 0px;
 }
 /* ------------------------ */
@@ -219,9 +219,10 @@ p{
 /* ------------------------ */
 
 /* Button styles */
-button.button{
+.button{
 	display: inline-block;
 
+	text-align: center;
 	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -230,16 +231,17 @@ button.button{
 	width: 240px;
 	margin-left: 15px;
 
-	color: white;
+	color: white !important;
 
 	background: none;
 	outline: none;
 	border: none;
+	cursor: pointer;
 
 	position: relative;
 	z-index: 1;
 }
-button.button::before {
+.button::before {
     content: '';
 
     position: absolute;
@@ -256,7 +258,7 @@ button.button::before {
     transform: skew(-150deg);
     z-index: -1;
 }
-button.button:hover::before{
+.button:hover::before{
 	background-position: left bottom;
 }
 /* ------------------------ */
@@ -264,6 +266,14 @@ button.button:hover::before{
 /* Slider styles */
 .Slider{
 	border-bottom: 1px solid #962932;
+}
+.SliderBackground{
+	background: url(./img/slider-image.png);
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	padding: 120px 0px;
+
 }
 .SliderHeading{
 	font-size: 36px;
@@ -369,21 +379,24 @@ p.SliderText{
 .NewsBlock .col:last-child{
 	margin-right: 0px;
 }
+/* ------------------------ */
+
 /* ContactsBlock styles */
 .gray-12px{
 	font-size: 12px;
-	line-height: 14px;
+	line-height: 18px;
 
 	color: #707070;
 }
 .ContactInfo > .col > .row{
-	padding: 5px 0px;
+	padding: 10px 0px;
 
 }
 .ContactPhone{
 	font-size: 30px;
 	line-height: 36px;
 }
+/* ------------------------ */
 
 /* DescriptionBlock styles */
 .DescriptionBlock h2{
@@ -396,6 +409,7 @@ p.SliderText{
 	font-size: 16px;
 	line-height: 22px;
 }
+/* ------------------------ */
 
 /* Footer styles */
 footer{
@@ -425,6 +439,7 @@ footer p{
 	background: #dfe9eb;
 
 }
+/* ------------------------ */
 
 /* sidebar */
 .menuToggle{
@@ -444,9 +459,18 @@ footer p{
 
 	display: none;
 	transition: 0.5s;
+
+	animation: ease-in-out fade-out 0.3s;
+}
+@keyframes fade-out {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 100%;
+	}
 }
 .sidenav{
-
 	position: fixed;
 	top: 0;
 	left: -340px;
@@ -459,7 +483,7 @@ footer p{
 
 	background: #962932;
 
-	transition: 0.5s;
+	transition: 0.3s;
 }
 .sidenav .container-fluid{
 	padding: 0;
@@ -468,7 +492,7 @@ footer p{
 	padding-left: 20px;
 	padding-right: 20px;
 }
-ul.SidebarMenu > .nav-item > .nav-link{
+.SidebarMenu > a.nav-link{
 	color: white;
 	padding: 15px 20px;
 
@@ -477,10 +501,11 @@ ul.SidebarMenu > .nav-item > .nav-link{
 
 	border-top: 1px solid white;
 }
-ul.SidebarMenu > .nav-item:last-child{
+.SidebarMenu > a.nav-link:last-child{
 	border-bottom: 1px solid white;
 }
-ul.SidebarMenu > .nav-item > .nav-link:hover{
+.SidebarMenu > .nav-link:hover{
 	background: #B11622;
 	transition: 0.1s ease;
 }
+/* ------------------------ */
